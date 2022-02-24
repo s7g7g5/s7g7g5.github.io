@@ -138,7 +138,6 @@
 
         <em class="block-author">Email: sales@delwin.in</em> <br>
         <br>
-	     
         <!-- p class="lead">Social Link</p><hr>
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
           <a href="#"><img src="assets/img/social-icons/btn_skype.png" alt="Skype"></a>
@@ -153,13 +152,14 @@
           Follow us
         </div>
         <br !-->
+	<div data-netlify-recaptcha="true"></div>
       </div>
       <div class="col-lg-8">
         <div class="feedback-form">
 
           <div id="contact-response"></div>
           
-          <form name="contact" data-netlify="true" data-netlify-recaptcha="true" method="post" id="contact-form">
+          <form name="contact-form" netlify-data="true" data-netlify-recaptcha="true" method="post" id="contact-form">
             <fieldset>
               <div class="form-group form-group-fullname">
                 <label class="control-label" for="fullname">NAME *</label>
@@ -172,8 +172,8 @@
               <div class="form-group form-group-message">
                 <label class="control-label" for="message">MESSAGE *</label>
                 <textarea class="form-control" name="message" id="message" rows="3"></textarea>
-              </div>  
-		     <div data-netlify-recaptcha="true"></div>
+              </div>          
+	       <div data-netlify-recaptcha="true"></div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </fieldset>
           </form>
