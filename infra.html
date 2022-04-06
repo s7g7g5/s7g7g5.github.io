@@ -124,14 +124,19 @@
 
   </body>
   <style>
-    .image-gallery {overflow: auto; margin-left: -1%!important;}
+    .image-gallery {overflow: auto}
     .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
     .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
-    .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
-    .image-gallery li a img {width: 100%; display: block;}
-</style>
+    .image-gallery li a span {display: block; text-overflow: ellipsis;  white-space: nowrap; padding: 3px 0;}
+    .image-gallery li a img {display: block; border:5px solid darkgray; border-radius:10px}
 
-<ul class="image-gallery">
+    span{font-size : large; }
+    @media screen and (max-width: 799px){ ul{display : grid; overflow: hidden !important;},span{ font-size: large; text-overflow: none !important; } img{width: -webkit-fill-available;}}
+    @media (min-width: 800px){img {width: 100% !important;}}
+
+</style>   
+    
+  <ul class="image-gallery">
 	
 		
 	
@@ -542,6 +547,18 @@
 		
 	
 </ul>
+     
+   
+
+      
+        
+      
+        
+      
+
+         
+   
+
 
 
 
